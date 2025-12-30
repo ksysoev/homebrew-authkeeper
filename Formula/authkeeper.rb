@@ -5,20 +5,20 @@
 class Authkeeper < Formula
   desc "A secure CLI secret manager and OAuth2/OIDC client"
   homepage "https://github.com/ksysoev/authkeeper"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.2/authkeeper_Darwin_x86_64.tar.gz"
-      sha256 "95b196604a780be5af27707a178da922a286c1f319e1ca5dbce6f19233c6c856"
+      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.3/authkeeper_Darwin_x86_64.tar.gz"
+      sha256 "dea06daa77c8a8329f902176c0064bbad9589e21d4fe04f7c4e6fb83e236e2ed"
 
       def install
         bin.install 'authkeeper'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.2/authkeeper_Darwin_arm64.tar.gz"
-      sha256 "6d3138718ab3a4b922f0b936085dad240a7a61da95eac57921e31e52c32e04e1"
+      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.3/authkeeper_Darwin_arm64.tar.gz"
+      sha256 "f7fd1ceb51e08e0950c7219734f4bcea49ce1f019a7ad54268360bc8e3cc7aac"
 
       def install
         bin.install 'authkeeper'
@@ -28,15 +28,15 @@ class Authkeeper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.2/authkeeper_Linux_x86_64.tar.gz"
-      sha256 "dd0a631e3d8f8ec35e1ca9c1bcfa4d8827f258661875c71dc8b611885b304d01"
+      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.3/authkeeper_Linux_x86_64.tar.gz"
+      sha256 "1a7e05d09ba803396035dca269069ba578c44f22e3970cbfc3f0aa25e34b1848"
       def install
         bin.install 'authkeeper'
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.2/authkeeper_Linux_arm64.tar.gz"
-      sha256 "7e695d584ed95367822d98101222063c792d3a69a14a4a0f076d0b781128411a"
+      url "https://github.com/ksysoev/authkeeper/releases/download/v0.0.3/authkeeper_Linux_arm64.tar.gz"
+      sha256 "bbf59f71f27055eb9a960f76db50e3b6fe20a1d37809125be75aa53e4cf8b1ff"
       def install
         bin.install 'authkeeper'
       end
